@@ -18,14 +18,14 @@ The .Net graphics function getThumbnailImage, while at first glance is very help
  friend. Most digital cameras, for instance, create a thumbnail that is saved as part of the original
  image - and this is what the getThumbnailImage will extract for you 
  (rather than create one from scratch). As these embedded thumbnails can be as small as 40px by 40px 
- it's often not much use when you want a 100px by 100px thumbnail !
+ it's often not much use when you want a 100px by 100px thumbnail!
 
 The basic resize algorithms are well understood, and there are lots of those out there just a 
 Google away (although the added restriction of maximum constraints isn't often bothered with) but 
 the biggest issue I had with my original search was finding a sample where the filesize for the 
-thumbnail didn't expand to greater than the original filesize ! 
+thumbnail didn't expand to greater than the original filesize! 
 It turns out that in most cases the vital 'rawformat' parameter was being missed from the save... 
-so my example uses that and hopefully stops people being tripped up by this in the future !
+so my example uses that and hopefully stops people being tripped up by this in the future!
 
 How to use
 ----------
@@ -33,7 +33,7 @@ The script component from the form should be placed on the receiving page, and t
 you want to define the content to be uploaded.
 
 Multiple files can be supported (the form by default only handles one, but by incrementing the counter in
-[code]fileFld = request.files(0)[/code] you will be able to loop through multiple files on a page
+<code>fileFld = request.files(0)</code> you will be able to loop through multiple files on a page
 
 
 Contribute
